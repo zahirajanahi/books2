@@ -209,7 +209,8 @@
 }
 
 
-.best-book h5{
+
+.best-book h6{
     overflow-y: hidden;
     margin-left: 20px;
     margin-bottom: 30px;
@@ -222,6 +223,16 @@
     gap: 20px;
 }
  .infos .title {
-  
+   color: #fff;
+   font-size: 19px;
 }
+.infos .writer {
+    color:#4c505be3;
+    font-size: 15px;
+ }
 
+ .infos .stars {
+    color:#4c505be3 ;
+    font-size: 20px;
+    padding: 10px 0;
+ }
