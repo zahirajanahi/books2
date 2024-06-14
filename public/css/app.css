@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color:#282f4b ;
+    padding: 0.4rem 0.8rem;
+    transition: all .5s ease;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.sidebar.active ~ .main-content {
+    left: 250px;
+    width: calc(100% -250%);
+    
+}
+.sidebar.active{
+    width: 250px;
+}
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 22px;
+}
+.sidebar.active #btn {
+    left: 90%;
+} 
+.sidebar .top .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+.sidebar.active .top .logo{
+    opacity: 1;
+}
+.top .logo i{
+    font-size: 2rem;
+    margin-right: 5px;
+}
+.sidebar p{
+    opacity: 0;
+    
+}
+.sidebar.active p{
+ opacity: 1;
+}
+.sidebar ul li{
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+
+}
+.sidebar ul li a{
+    color: #8e95b2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    width: 100%; 
+    padding-top: 30px; 
+    height: 80%;
+    font-size: 22px;
+    overflow-y: hidden;
+}
+.sidebar ul li a:hover {
+    background-color: #d6bcc5;
+    color:antiquewhite;
+
+}
+
+.sidebar ul li a i{
+    min-width: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 12px;
+    min-height: 50px;
+}
+.sidebar .nav-item {
+    opacity: 0;
+    padding-bottom: 30px;
+    
+}
+.sidebar.active .nav-item {
+    opacity: 1;
+    
+}
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    opacity: 0;
+    
+}
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+    
+}
+.main-content{
+    position: relative;
+    background-image: linear-gradient(#8586a5,#3e4c6d);
+    height:100vh;
+    top: 0;
+    left:80px;
+    transition: all 0.5s ease ;
+    width: calc(100% - 80px);
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+} 
+.first {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+.first .left p {
+    font-size: 20px;
+}
+.first .books p {
+    font-size: 20px;
+}
+.first p{
+    font-size: 5px;
+}
+.first .icon{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.first .icon i{
+    background-color: #323d5d80;
+    padding: 10px;
+    border-radius:20px;
+    color: #fff;
+    cursor: pointer;
+}
+.first .icon i:hover {
+    background-color: #d6bcc5;
+}
+
+.carousel{
+    height: 600px; 
+    perspective: 250px; 
+       
+}
+.carousel .carousel-item {
+	width: 450px;
+	background: #fff;
+	height: auto;
+	text-align: center;
+    border-radius: 15px;
+    overflow-y: hidden;
+}
+.section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+.best-book {
+    background-color: #5b6588;
+    height: 500px;
+    width: 50vw;
+}
+.popular{
+    background-color: #5b65888e;
+    height: 500px;
+    width: 50vw;
+    margin-right: 125px;
+}
+
+
+.best-book h5{
+    overflow-y: hidden;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.review{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+ .infos .title {
+  
+}
+

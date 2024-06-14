@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Books</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+              <i class="bx bxl-codepen"></i>
+              <span>Books</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+      
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="bx bxs-grid-alt"></i>
+                        <span class="nav-item">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bxs-food-menu"></i>
+                        <span class="nav-item">Books</span>
+                    </a>
+                    <span class="tooltip">Books</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
+                        <span class="nav-item">Categories</span>
+                    </a>
+                    <span class="tooltip">Categories</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-list-check"></i>
+                        <span class="nav-item">Orders</span>
+                    </a>
+                    <span class="tooltip">Orders</span>
+                </li>
+            </ul>      
+    </div>
+
+    <div class="main-content">
+        
+        <div class="first">
+           <div class="left">
+           <p>MyLibrary</p>
+           </div>
+          <div class="books">
+             <p>Books</p>
+           </div>
+            <div class="icon">
+                <i class='bx bx-user'></i>
+                <i class='bx bx-comment'></i>
+                <i class='bx bx-bell'></i>
+            </div>
+        </div>
+         
+    <div class="carousel">
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="./public/image/download.jpg" height="260px" width="200px">
+                </div>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="./public/image/download (1).jpg" height="260px" width="200px">
+                </div>
+            </div>
+        </a>
+        <a class="carousel-item" href="#" >
+            <div class="testi">
+                <div class="img-area">
+                    <img src="./public/image/Howl's Moving Castle Book Cover.jpg" height="260px" width="200px">
+                </div>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="./public/image/21 Books That Fucked You Up As A Kid.jpg" height="260px" width="200px">
+                </div>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="./public/image/Loputyn _Alice nel Pese delle meraviglie_.jpg" height="260px" width="200px">
+                </div>
+            </div>
+        </a>
+      
+   </div>
+
+     <div class="section">
+        <!--left side-->
+        <div class="best-book">
+           <h5>Best Book</h5>
+             <div class="review">
+                 <div class="poster">
+                    <img src="./public/image/Loputyn _Alice nel Pese delle meraviglie_.jpg" height="300px" width="220px" alt="">
+                 </div>
+                <div class="infos">
+                     <p class="title">Alice Nel paese meravigile</p>
+                     <p class="writer">coolin hover</p>
+                      <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>  
+                      <p class="desc">Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. <br> Deserunt? Lorem ipsum dolor 
+                         sit amet consectetur <br> adipisicing elit.  Nemo!
+                      </p>  
+                      <button>Read more</button>          
+               </div>
+
+             </div>
+        </div>
+
+
+
+
+
+       <!--right side-->
+         <div class="popular">
+
+         </div>
+     </div>
+
+    </div>
+
+
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector('.sidebar')
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        };
+        
+        $(document).ready(function(){
+      $('.carousel').carousel({
+			padding: 200
+	});
+	autoplay();
+	function autoplay() {
+		$('.carousel').carousel('next');
+		setTimeout(autoplay, 4500);
+	}
+  });
+    
+
+    </script>
+</body>
+</html>
