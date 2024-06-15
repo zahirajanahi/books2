@@ -90,6 +90,7 @@
 .sidebar ul li a:hover {
     background-color: #d6bcc5;
     color:antiquewhite;
+    cursor:pointer;
 
 }
 
@@ -126,6 +127,7 @@
 }
 .sidebar ul li:hover .tooltip {
     opacity: 1;
+    cursor:pointer;
 }
 .sidebar.active ul li .tooltip{
     display: none;
@@ -174,6 +176,7 @@
 }
 .first .icon i:hover {
     background-color: #d6bcc5;
+    cursor:pointer;
 }
 
 .carousel{
@@ -184,7 +187,7 @@
 .carousel .carousel-item {
 	width: 450px;
 	background: #fff;
-	height: auto;
+	height: 100vh;
 	text-align: center;
     border-radius: 15px;
     overflow-y: hidden;
@@ -210,11 +213,12 @@
 
 
 
-.best-book h6{
+.best-book h5{
     overflow-y: hidden;
     margin-left: 20px;
     margin-bottom: 30px;
     color: #fff;
+    padding: 10px 0;
 }
 
 .review{
@@ -227,12 +231,76 @@
    font-size: 19px;
 }
 .infos .writer {
-    color:#4c505be3;
+    color:#949baee3;
     font-size: 15px;
  }
 
  .infos .stars {
-    color:#4c505be3 ;
+    color:#949baee3;
     font-size: 20px;
-    padding: 10px 0;
+    padding: 15px 0;
  }
+
+ .infos .desc {
+    padding-bottom: 81px;
+    color: #949baee3;
+ }
+ .sp1 {
+    border-bottom: 2px solid #97485e;
+ }
+ button {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    color: #fff;
+ }
+ button:hover {
+    background-color: #d6bcc5 ;
+    cursor: pointer;
+    transition: all .50s ease-in-out;
+    cursor:pointer;
+ }
+
+ .up {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    margin-top: 10px;
+    position: relative;
+ }
+ .down{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    
+ }
+ .popular h5 {
+    color: #fff;
+    margin-left: 20px;
+    overflow-y: hidden;
+    margin-top: 20px;
+ }
+ .popular{
+    color: aliceblue;
+    font-size: 14px;
+ }
+ .up span ,
+ .down span {
+    color: #949baee3;
+ }
+ .sp2{
+    color: #97485e;
+ }
+
+  
+  .hover {
+    opacity: 1;
+    cursor:pointer;
+  }
+  
+  
+  .hover:hover  {
+    opacity: 0.3;
+    cursor:pointer;
+  }
+ 

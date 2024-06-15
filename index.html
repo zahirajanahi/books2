@@ -55,7 +55,7 @@
         
         <div class="first">
            <div class="left">
-           <p>MyLibrary</p>
+           <p><span class="sp2">My</span>Library</p>
            </div>
           <div class="books">
              <p>Books</p>
@@ -109,7 +109,7 @@
      <div class="section">
         <!--left side-->
         <div class="best-book">
-           <h6>Best Book</h6>
+           <h5><span class="sp1">Best</span> Book</h5>
              <div class="review">
                  <div class="poster">
                     <img src="./public/image/Loputyn _Alice nel Pese delle meraviglie_.jpg" height="300px" width="220px" alt="">
@@ -124,8 +124,8 @@
                         <i class="fa-regular fa-star"></i>
                       </div>  
                       <p class="desc">Lorem ipsum dolor sit amet consectetur
-                         adipisicing elit. <br> Deserunt? Lorem ipsum dolor 
-                         sit amet consectetur <br> adipisicing elit.  Nemo!
+                         adipisicing <br> elit.  Deserunt? Lorem ipsum dolor 
+                         sit amet <br>consectetur  adipisicing elit.  Nemo!
                       </p>  
                       <button>Read more</button>          
                </div>
@@ -139,9 +139,39 @@
 
        <!--right side-->
          <div class="popular">
-
+            <h5>popular</h5>
+            <div class="up">
+                <div><img src="./public/image/19 Books Everyone Needs To Read At Least Once In Their Life.jpg" height="150px" width="98px" class="hover" alt=""> <br>Pride nd prejudice <br> 
+                    <span>romantic Book</span> 
+                </div>
+                <div><img src="./public/image/21 Books That Fucked You Up As A Kid.jpg" height="150px" width="98px" class="hover" alt=""><br>the little princess 
+                    <br> <span>romantic Book</span>
+                </div>
+                <div><img src="./public/image/download (1).jpg" height="150px" width="98px" class="hover" alt=""><br>hunting of halen 
+                   <br> <span>fantasia Book</span>
+                </div>
+                <div><img src="./public/image/download (3).jpg" height="150px" width="98px" class="hover" alt=""><br>Pride nd prejudice
+                   <br> <span>romantic Book</span>
+                </div>
+            </div>
+                <div class="down">
+                <div><img src="./public/image/download.jpg" height="150px" width="98px" class="hover" alt=""><br>the secret of Awkard
+                   <br> <span>thriller Book</span>
+                </div>
+                <div><img src="./public/image/Howl's Moving Castle Book Cover.jpg" height="150px" class="hover" width="98px" alt=""><br>howls moving castle
+                   <br> <span>fantasia Book</span>
+                </div>
+                <div><img src="./public/image/Loputyn _Alice nel Pese delle meraviglie_.jpg" height="150px" class="hover" width="98px" alt=""><br>Alice Nel paese
+                   <br> <span>melodrama Book</span>
+                </div>
+                <div><img src="./public/image/download (2).jpg" height="150px" width="98px" class="hover" alt=""><br>sweet sixteen
+                   <br> <span>romantic Book</span>
+                </div>
+            </div>
          </div>
-     </div>
+    
+    
+        </div>
 
     </div>
 
@@ -160,7 +190,7 @@
         
         $(document).ready(function(){
       $('.carousel').carousel({
-			padding: 200
+			padding: 100,
 	});
 	autoplay();
 	function autoplay() {
